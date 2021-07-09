@@ -1,4 +1,4 @@
-# Budget Data
+# PyBank Challenge
 
 # Import the os module
 # This will allow us to create file path to budget data
@@ -15,11 +15,9 @@ with open(csvpath) as csvfile:
     # Use CSV reader to specify delimiter and variable that holds contents
     csvreader = csv.reader(csvfile, delimiter=',')
 
-    #print(csvreader)
-
     # Read the header row first
     csv_header = next(csvreader)
-    # print(f"CSV Header: {csv_header}")
+    print(f"CSV Header: {csv_header}")
 
     # Define last month number
     last_month = 0 
