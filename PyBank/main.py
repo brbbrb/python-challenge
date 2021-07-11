@@ -73,7 +73,7 @@ minmonth = str(months[minrow])
 #print(minmonth)
 
 # Message
-with open ("pybank_financial_analysis","w")as file:
+with open ("pybank_financial_analysis.txt","w")as file:
     file.write("Financial Analysis" "\n")
     file.write("------------------------" "\n")
     file.write(f'Total Months: {total_months}' "\n")
@@ -82,5 +82,5 @@ with open ("pybank_financial_analysis","w")as file:
     file.write(f'Greatest Increase in Profits: {maxmonth} (${maxprofit})' "\n")
     file.write(f'Greatest Decrease in Profits: {minmonth} (${minprofit})')
 
-file = open("pybank_financial_analysis","r")
+file = open("pybank_financial_analysis.txt","r")
 print(file.read())
